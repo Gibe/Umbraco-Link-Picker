@@ -21,6 +21,16 @@ This package is for **Umbraco 7.x** (Belle).
 
 ##Screenshots
 
+![Screenshot 1](README.md.res/Step-1.png)
+
+![Screenshot 2](README.md.res/Step-2.png)
+
+![Screenshot 3a](README.md.res/Step-3a.png)
+
+![Screenshot 3b](README.md.res/Step-3b.png)
+
+![Screenshot 4](README.md.res/Step-4.png)
+
 ##License
 
 The Umbraco Link Picker is created by <a href="http://www.karltynan.co.uk" target="_blank">Karl Tynan</a> for <a href="http://www.gibedigital.com" target="_blank">Gibe Digital</a> under the MIT License: [opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
