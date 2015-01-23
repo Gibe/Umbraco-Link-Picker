@@ -21,6 +21,7 @@ This package is for **Umbraco 7.x** (Belle).
 
 ##Screenshots
 
+-> ***Click the picker choose link*** <-
 ![Screenshot 1](README.md.res/Step-1.jpg)
 
 ![Screenshot 2](README.md.res/Step-2.jpg)
