@@ -21,15 +21,15 @@ This package is for **Umbraco 7.x** (Belle).
 
 ##Screenshots
 
-![Screenshot 1](README.md.res/Step-1.png)
+![Screenshot 1](README.md.res/Step-1.jpg)
 
-![Screenshot 2](README.md.res/Step-2.png)
+![Screenshot 2](README.md.res/Step-2.jpg)
 
-![Screenshot 3a](README.md.res/Step-3a.png)
+![Screenshot 3a](README.md.res/Step-3a.jpg)
 
-![Screenshot 3b](README.md.res/Step-3b.png)
+![Screenshot 3b](README.md.res/Step-3b.jpg)
 
-![Screenshot 4](README.md.res/Step-4.png)
+![Screenshot 4](README.md.res/Step-4.jpg)
 
 ##License
 
