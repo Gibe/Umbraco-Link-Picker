@@ -1,0 +1,46 @@
+﻿.gibe-link-picker
+{
+	margin: 0;
+	padding: 0;
+}
+
+.gibe-link-picker .chosen
+{
+	margin: 0;
+	padding: 0;
+}
+
+.gibe-link-picker .internal-picker
+{
+	margin: 0;
+	padding: 0;
+}
+
+.gibe-link-picker .toggle
+{
+	margin: 0;
+	padding: 0;
+}
+
+.gibe-link-picker .new-window
+{
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+
+.gibe-link-picker .new-window label
+{
+	margin: 0;
+	padding: 0;
+}
+
+.gibe-link-picker .form-row
+{
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+
+.gibe-link-picker .form-row .umb-editor
+{
+	min-width: 300px;
+}
