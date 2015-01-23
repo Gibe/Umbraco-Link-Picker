@@ -21,25 +21,25 @@ This package is for **Umbraco 7.x** (Belle).
 
 ##Screenshots
 
-![Screenshot 1](README.md.res/Step-1.jpg)
-
 Step 1: Click the picker choose link
 
-![Screenshot 2](README.md.res/Step-2.jpg)
+![Screenshot 1](README.md.res/Step-1.jpg)
 
 Step 2: Choose either an internal or external link
 
-![Screenshot 3a](README.md.res/Step-3a.jpg)
+![Screenshot 2](README.md.res/Step-2.jpg)
 
 Step 3a: Set the options for an external link
 
-![Screenshot 3b](README.md.res/Step-3b.jpg)
+![Screenshot 3a](README.md.res/Step-3a.jpg)
 
 Step 3b: Set the options for an internal link
 
-![Screenshot 4](README.md.res/Step-4.jpg)
+![Screenshot 3b](README.md.res/Step-3b.jpg)
 
 Step 4: View or remove the link
+
+![Screenshot 4](README.md.res/Step-4.jpg)
 
 ##License
 
