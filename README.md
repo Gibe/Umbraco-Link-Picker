@@ -3,7 +3,7 @@
 
 ##About the package
 
-This package is for Umbraco 7.x
+This package is for **Umbraco 7.x** (Belle).
 
 **Features:**
 - Integrates with Umbraco linkPicker (for internal or external link selection)
@@ -13,7 +13,7 @@ This package is for Umbraco 7.x
 
 ###Using package
 
-1. Download the package from the Umbraco project repo
+1. Download the package from the Umbraco project repo (coming soon)
 
 ###Using NuGet
 
