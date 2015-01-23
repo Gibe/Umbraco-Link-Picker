@@ -11,11 +11,11 @@ This package is for **Umbraco 7.x** (Belle).
 
 ##Installation
 
-###Using package
+##Install using package
 
 1. Download the package from the Umbraco project repo (coming soon)
 
-###Using NuGet
+###Install using NuGet
 
 1. Install the package using NuGet (coming soon)
 
