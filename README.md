@@ -23,7 +23,7 @@ This package is for Umbraco 7.x
 
 ##License
 
-The Umbraco Link Picker is created by Karl Tynan at Gibe Digital under the MIT License: http://opensource.org/licenses/MIT
+The Umbraco Link Picker is created by [Karl Tynan](http://www.karltynan.co.uk) for [Gibe Digital](http://www.gibedigital.com) under the MIT License: [opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
 
 ##Get involved!
 
