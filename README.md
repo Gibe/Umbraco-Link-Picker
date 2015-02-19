@@ -23,23 +23,23 @@ This package is for **Umbraco 7.x** (Belle).
 
 ##Screenshots
 
-Step 1: Click the picker choose link
+**Step 1:** Click the "Choose" link
 
 ![Screenshot 1](README.md.res/Step-1.jpg)
 
-Step 2: Choose either an internal or external link
+**Step 2:** In the Umbraco side menu, choose either an internal or external link
 
 ![Screenshot 2](README.md.res/Step-2.jpg)
 
-Step 3a: Set the options for an external link
+**Step 3a:** Set the options for external links (URL, title, etc.)
 
 ![Screenshot 3a](README.md.res/Step-3a.jpg)
 
-Step 3b: Set the options for an internal link
+**Step 3b:** Or, set the options for internal links
 
 ![Screenshot 3b](README.md.res/Step-3b.jpg)
 
-Step 4: View or remove the link
+**Step 4:** View or remove the link
 
 ![Screenshot 4](README.md.res/Step-4.jpg)
 
