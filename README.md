@@ -13,7 +13,9 @@ This package is for **Umbraco 7.x** (Belle).
 
 ##Install using package
 
-1. Download the package from the Umbraco project repo (coming soon)
+1. Download and install the package from our.umbraco: <a href="https://our.umbraco.org/projects/backoffice-extensions/link-picker" target="_blank">our.umbraco.org/projects/backoffice-extensions/link-picker</a>
+2. Create a new DataType in the Developer tab in your Umbraco project, referencing "Link Picker" (alias: "Gibe.LinkPicker")
+3. Add the new DataType to your Document Types to use the Link Picker
 
 ###Install using NuGet
 
