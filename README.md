@@ -9,6 +9,13 @@ This package is for **Umbraco 7.x** (Belle).
 - Integrates with Umbraco linkPicker (for internal or external link selection)
 - Uses Umbraco linkPicker to define the selected node ID, name, URL and target (for internal links) and name, URL and target (for external links)
 
+##Quick links
+- <a href="#installation">Installation</a>
+- <a href="#usage">Usage</a>
+- <a href="#screenshots">Screenshots</a>
+- <a href="#license">License</a>
+- <a href="#get-involved">Get involved!</a>
+
 ##Installation
 
 ###Install using package
