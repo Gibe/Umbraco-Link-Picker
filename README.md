@@ -1,5 +1,15 @@
 #Umbraco Link Picker
+
 **A simple internal or external link picker property editor for Umbraco 7.x**
+
+##Quick links
+
+- <a href="#about-the-package">About the package</a>
+- <a href="#installation">Installation</a>
+- <a href="#usage">Usage</a>
+- <a href="#screenshots">Screenshots</a>
+- <a href="#license">License</a>
+- <a href="#get-involved">Get involved!</a>
 
 ##About the package
 
@@ -8,13 +18,6 @@ This package is for **Umbraco 7.x** (Belle).
 **Features:**
 - Integrates with Umbraco linkPicker (for internal or external link selection)
 - Uses Umbraco linkPicker to define the selected node ID, name, URL and target (for internal links) and name, URL and target (for external links)
-
-##Quick links
-- <a href="#installation">Installation</a>
-- <a href="#usage">Usage</a>
-- <a href="#screenshots">Screenshots</a>
-- <a href="#license">License</a>
-- <a href="#get-involved">Get involved!</a>
 
 ##Installation
 
