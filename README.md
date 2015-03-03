@@ -11,7 +11,7 @@ This package is for **Umbraco 7.x** (Belle).
 
 ##Installation
 
-##Install using package
+###Install using package
 
 1. Download and install the package from our.umbraco: <a href="https://our.umbraco.org/projects/backoffice-extensions/link-picker" target="_blank">our.umbraco.org/projects/backoffice-extensions/link-picker</a>
 2. Create a new DataType in the Developer tab in your Umbraco project, referencing "Link Picker" (alias: "Gibe.LinkPicker")
@@ -20,6 +20,42 @@ This package is for **Umbraco 7.x** (Belle).
 ###Install using NuGet
 
 1. Install the package using NuGet (coming soon)
+
+##Usage
+
+The Link Picker returns the following JSON:
+
+<pre>
+{
+	id: 1039,
+	name: "Node Name",
+	url: "/node-url",
+	target: "_blank"
+}
+</pre>
+
+If you are using dynamic, you can use this:
+
+<pre>
+// url
+@CurrentPage.propertyName.url
+// name
+@CurrentPage.propertyName.name
+</pre>
+
+Of if you are using a strongly-typed model, or want to deserialize the JSON, the use <code>Newtonsoft.Json</code>:
+
+<pre>
+var data = JsonConvert.DeserializeObject(value.ToString());
+
+public class LinkPickerModel
+{
+	public int Id { get; set; }
+	public string Name { get; set; }
+	public string Url { get; set; }
+	public string Target { get; set; }
+}
+</pre>
 
 ##Screenshots
 
