@@ -37,9 +37,10 @@ The Link Picker returns the following JSON:
 If you are using dynamic, you can use this:
 
 <pre>
-// url
+// return url
 @CurrentPage.propertyName.url
-// name
+
+// return name
 @CurrentPage.propertyName.name
 </pre>
 
