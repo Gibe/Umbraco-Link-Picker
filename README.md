@@ -33,7 +33,7 @@ This package is for **Umbraco 7.x** (Belle).
 
 ##Usage
 
-The Link Picker returns the following JSON:
+The Link Picker returns JSON like the following example:
 
 <pre>
 {
@@ -44,7 +44,7 @@ The Link Picker returns the following JSON:
 }
 </pre>
 
-If you are using dynamic, you can use this:
+If you are using dynamic, you can access the JSON data like this:
 
 <pre>
 // return url
@@ -54,7 +54,7 @@ If you are using dynamic, you can use this:
 @CurrentPage.propertyName.name
 </pre>
 
-Of if you are using a strongly-typed model, or want to deserialize the JSON, the use <code>Newtonsoft.Json</code>:
+If you are using strongly-typed, or want to deserialize the JSON, then use <code>Newtonsoft.Json</code> to access the data using a model:
 
 <pre>
 var data = JsonConvert.DeserializeObject(value.ToString());
