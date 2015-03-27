@@ -16,7 +16,7 @@
 					target: e.target || '_self'
 				};
 				// close dialog
-				uDialogService.closeAll();
+				uDialogService.close();
 			}
 		});
 	};
