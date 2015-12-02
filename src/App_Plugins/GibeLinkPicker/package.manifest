@@ -11,6 +11,7 @@
 		}
 	],
 	javascript: [
-		"~/App_Plugins/GibeLinkPicker/picker.controller.js"
+		"~/App_Plugins/GibeLinkPicker/picker.controller.js",
+		"~/App_Plugins/GibeLinkPicker/Dialogs/linkpicker.controller.js",
 	]	
 }

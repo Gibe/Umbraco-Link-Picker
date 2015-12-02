@@ -5,20 +5,46 @@
 
 	// choose internal link
 	$scope.chooseLink = function () {
-		$scope.model.value = null;
-		uDialogService.linkPicker({
-			callback: function (e) {
-				// set model
-				$scope.model.value = {
-					id: e.id || 0,
-					name: e.name || '',
-					url: e.url,
-					target: e.target || '_self'
-				};
-				// close dialog
-				uDialogService.close();
-			}
-		});
+	    $scope.model.value = null;
+	    uDialogService.open({
+	        template: '/App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
+	        show: true,
+	        dialogData: $scope.model.config,
+	        callback: function(e) {
+	            // set model
+	            $scope.model.value = {
+	                id: e.id || 0,
+	                name: e.name || '',
+	                url: e.url,
+	                target: e.target || '_self',
+	                hashtarget: e.hashtarget || ''
+	            };
+	            // close dialog
+	            uDialogService.close();
+	        }
+	    });
+	};
+
+	$scope.editLink = function () {
+	    $scope.target = 
+	    uDialogService.open({
+	        template: '/App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
+	        show: true,
+	        dialogData: $scope.model.config,
+	        target: $scope.model.value,
+	        callback: function (e) {
+	            // set model
+	            $scope.model.value = {
+	                id: e.id || 0,
+	                name: e.name || '',
+	                url: e.url,
+	                target: e.target || '_self',
+	                hashtarget: e.hashtarget || ''
+	            };
+	            // close dialog
+	            uDialogService.close();
+	        }
+	    });
 	};
 
 	// remove link
