@@ -7,7 +7,6 @@ angular.module("umbraco").controller("Gibe.Dialogs.LinkPickerController",
 	    localizationService.localize("general_search").then(function (value) {
 	        searchText = value + "...";
 	    });
-	    debugger;
 
         if (dialogOptions.target != null) {
             $scope.target = dialogOptions.target;
