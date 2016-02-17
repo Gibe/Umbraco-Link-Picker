@@ -40,7 +40,8 @@ The Link Picker returns JSON like the following example:
 	id: 1039,
 	name: "Node Name",
 	url: "/node-url",
-	target: "_blank"
+	target: "_blank",
+	hashtarget: ""
 }
 </pre>
 
@@ -65,6 +66,7 @@ public class LinkPickerModel
 	public string Name { get; set; }
 	public string Url { get; set; }
 	public string Target { get; set; }
+	public string Hashtarget { get; set; }
 }
 </pre>
 
