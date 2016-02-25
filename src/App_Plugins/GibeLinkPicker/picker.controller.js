@@ -7,7 +7,7 @@
 	$scope.chooseLink = function () {
 	    $scope.model.value = null;
 	    uDialogService.open({
-	        template: '/App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
+	        template: '../App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
 	        show: true,
 	        dialogData: $scope.model.config,
 	        callback: function(e) {
@@ -28,7 +28,7 @@
 	$scope.editLink = function () {
 	    $scope.target = 
 	    uDialogService.open({
-	        template: '/App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
+	        template: '../App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
 	        show: true,
 	        dialogData: $scope.model.config,
 	        target: $scope.model.value,
@@ -52,5 +52,5 @@
 		$scope.model.value = null;
 	};
 
-	assetsService.loadCss("/App_Plugins/GibeLinkPicker/picker.css");
+	assetsService.loadCss("../App_Plugins/GibeLinkPicker/picker.css");
 });
