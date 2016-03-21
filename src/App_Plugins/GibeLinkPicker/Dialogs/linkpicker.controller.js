@@ -8,12 +8,14 @@ angular.module("umbraco").controller("Gibe.Dialogs.LinkPickerController",
 	        searchText = value + "...";
 	    });
 
-        if (dialogOptions.target != null) {
-            $scope.target = dialogOptions.target;
-        } else {
-            $scope.target = {};
-        }
+	    if (dialogOptions.target != null) {
+	        $scope.target = dialogOptions.target;
+	    } else {
+	        $scope.target = {};
+	    }
+
 	    $scope.dialogTreeEventHandler = $({});
+	    //$scope.target = {};
 	    $scope.searchInfo = {
 	        searchFromId: null,
 	        searchFromName: null,
@@ -52,7 +54,7 @@ angular.module("umbraco").controller("Gibe.Dialogs.LinkPickerController",
 	            $scope.searchInfo.showSearch = true;
 	            $scope.searchInfo.searchFromId = args.node.metaData.listViewNode.id;
 	            $scope.searchInfo.searchFromName = args.node.metaData.listViewNode.name;
-	        }	      
+	        }
 	        else {
 	            eventsService.emit("dialogs.linkPicker.select", args);
 
@@ -78,7 +80,7 @@ angular.module("umbraco").controller("Gibe.Dialogs.LinkPickerController",
 	            if (!angular.isUndefined($scope.target.isMedia)) {
 	                delete $scope.target.isMedia;
 	            }
-	        }	        
+	        }
 	    }
 
 	    function nodeExpandedHandler(ev, args) {
@@ -102,7 +104,7 @@ angular.module("umbraco").controller("Gibe.Dialogs.LinkPickerController",
 	                            cssClasses: ["not-published"]
 	                        }
 	                    ];
-	                }	                
+	                }
 	            });
 	        }
 	    }
@@ -131,13 +133,13 @@ angular.module("umbraco").controller("Gibe.Dialogs.LinkPickerController",
 	    // method to select a search result 
 	    $scope.selectResult = function (evt, result) {
 	        result.selected = result.selected === true ? false : true;
-	        nodeSelectHandler(evt, {event: evt, node: result});
+	        nodeSelectHandler(evt, { event: evt, node: result });
 	    };
 
-        //callback when there are search results 
+	    //callback when there are search results 
 	    $scope.onSearchResults = function (results) {
 	        $scope.searchInfo.results = results;
-            $scope.searchInfo.showSearch = true;
+	        $scope.searchInfo.showSearch = true;
 	    };
 
 	    $scope.dialogTreeEventHandler.bind("treeNodeSelect", nodeSelectHandler);

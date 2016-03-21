@@ -3,11 +3,11 @@
 	var ngi = angular.element('body').injector();
 	var uDialogService = ngi.get('dialogService');
 
-	// choose internal link
+    // choose internal link
 	$scope.chooseLink = function () {
 	    $scope.model.value = null;
 	    uDialogService.open({
-	        template: '/App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
+	        template: '../App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
 	        show: true,
 	        dialogData: $scope.model.config,
 	        callback: function(e) {
@@ -26,12 +26,12 @@
 	};
 
 	$scope.editLink = function () {
-	    $scope.target = 
+	    var linkPickerModel = angular.copy($scope.model);
 	    uDialogService.open({
-	        template: '/App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
+	        template: '../App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
 	        show: true,
-	        dialogData: $scope.model.config,
-	        target: $scope.model.value,
+	        dialogData: linkPickerModel.config,
+	        target: linkPickerModel.value,
 	        callback: function (e) {
 	            // set model
 	            $scope.model.value = {
@@ -52,5 +52,5 @@
 		$scope.model.value = null;
 	};
 
-	assetsService.loadCss("/App_Plugins/GibeLinkPicker/picker.css");
+	assetsService.loadCss("../App_Plugins/GibeLinkPicker/picker.css");
 });
