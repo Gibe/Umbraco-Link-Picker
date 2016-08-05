@@ -3,6 +3,8 @@
 		{
 			alias: "Gibe.LinkPicker",
 			name: "Link Picker",
+			icon: "icon-link",
+			group: "Pickers",
 			editor: {
 				view: "~/App_Plugins/GibeLinkPicker/picker.html",
 				hideLabel: false,
