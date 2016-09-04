@@ -29,7 +29,7 @@ This package is for **Umbraco 7.x** (Belle).
 
 ###Install using NuGet
 
-1. Install the package using NuGet (coming soon)
+PM > Install-Package UmbracoLinkPicker
 
 ##Usage
 
