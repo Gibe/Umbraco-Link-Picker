@@ -50,11 +50,11 @@ The <code>url</code> can be used for external URLs and <code>id</code> can be us
 If you are using dynamic, you can access the JSON data like this:
 
 <pre>
-// return external url
+// return an external URL
 @CurrentPage.propertyName.url
 
-// return internal url
-@Umbraco.Content(CurrentPage.propertyName.url).Url
+// return an internal URL
+@Umbraco.Content(CurrentPage.propertyName.id).Url
 </pre>
 
 If you are using strongly-typed, or want to deserialize the JSON, then use <code>Newtonsoft.Json</code> to access the data using a model:
