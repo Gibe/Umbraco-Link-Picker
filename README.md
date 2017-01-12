@@ -45,14 +45,16 @@ The Link Picker returns JSON like the following example:
 }
 </pre>
 
+The <code>url</code> can be used for external URLs and <code>id</code> can be used to get the URL of internal nodes in Umbraco (as URLs can change in Umbraco if the name changes).
+
 If you are using dynamic, you can access the JSON data like this:
 
 <pre>
-// return url
+// return external url
 @CurrentPage.propertyName.url
 
-// return name
-@CurrentPage.propertyName.name
+// return internal url
+@Umbraco.Content(CurrentPage.propertyName.url).Url
 </pre>
 
 If you are using strongly-typed, or want to deserialize the JSON, then use <code>Newtonsoft.Json</code> to access the data using a model:
