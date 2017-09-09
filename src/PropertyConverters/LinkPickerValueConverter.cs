@@ -7,7 +7,7 @@ using Umbraco.Core.Logging;
 
 namespace LinkPicker.Umbraco.PropertyConverters
 {
-    [PropertyValueType(typeof(LinkPicker))]
+    [PropertyValueType(typeof(Models.LinkPicker))]
     [PropertyValueCache(PropertyCacheValue.All, PropertyCacheLevel.Content)]
     public class LinkPickerValueConverter : PropertyValueConverterBase
     {
@@ -42,7 +42,7 @@ namespace LinkPicker.Umbraco.PropertyConverters
 
             try
             {
-                var linkPicker = JsonConvert.DeserializeObject<LinkPicker>(sourceString);
+                var linkPicker = JsonConvert.DeserializeObject<Models.LinkPicker>(sourceString);
 
                 return linkPicker;
             }
