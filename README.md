@@ -60,9 +60,14 @@ If you are using dynamic, you can access the JSON data like this:
 If you are using strongly-typed, or want to deserialize the JSON, then use <code>Newtonsoft.Json</code> to access the data using a model:
 
 <pre>
+// Strongly typed
 LinkPicker link = Model.Content.GetPropertyValue<LinkPicker>("link");
 
-// from LeBlender grid editor
+// ModelsBuilder
+var site = Model.Content.Site().OfType<Frontpage>();
+var link = site.Link;
+
+// From LeBlender grid editor
 LinkPicker link = Model.Items.First().GetValue<LinkPicker>("link");
 </pre>
 
