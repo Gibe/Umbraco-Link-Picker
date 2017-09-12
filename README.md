@@ -17,7 +17,7 @@ A simple internal or external link picker property editor for **Umbraco 7.x**
 
 This package is for **Umbraco 7.x**
 
-<h4>Features:</h4>
+<h4>Features</h4>
 <ul>
 	<li>Integrates with Umbraco <code>linkPicker</code> (for internal or external link selection)</li>
 <li>Uses Umbraco <code>linkPicker</code> to define the selected node ID, name, URL and target (for internal links) and name, URL and target (for external links)</li>
