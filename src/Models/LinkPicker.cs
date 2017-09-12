@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinkPicker.Umbraco.Models
+namespace Gibe.LinkPicker.Umbraco.Models
 {
     public class LinkPicker
     {
