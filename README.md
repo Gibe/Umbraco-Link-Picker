@@ -1,47 +1,51 @@
-#Umbraco Link Picker
+<h2>Umbraco Link Picker</h2>
 
-**A simple internal or external link picker property editor for Umbraco 7.x**
+A simple internal or external link picker property editor for **Umbraco 7.x**
 
-##Quick links
+<h3>Quick links</h3>
 
-- <a href="#about-the-package">About the package</a>
-- <a href="#installation">Installation</a>
-- <a href="#usage">Usage</a>
-- <a href="#screenshots">Screenshots</a>
-- <a href="#license">License</a>
-- <a href="#get-involved">Get involved!</a>
+<ul>
+<li><a href="#about-the-package">About the package</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#screenshots">Screenshots</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#get-involved">Get involved!</a></li>
+</ul>
 
-##About the package
+<h3>About the package</h4>
 
-This package is for **Umbraco 7.x** (Belle).
+This package is for **Umbraco 7.x**
 
-**Features:**
-- Integrates with Umbraco linkPicker (for internal or external link selection)
-- Uses Umbraco linkPicker to define the selected node ID, name, URL and target (for internal links) and name, URL and target (for external links)
+<h4>Features:</h4>
+<ul>
+	<li>Integrates with Umbraco <code>linkPicker</code> (for internal or external link selection)</li>
+<li>Uses Umbraco <code>linkPicker</code> to define the selected node ID, name, URL and target (for internal links) and name, URL and target (for external links)</li>
+</ul>
 
-##Installation
+<h3>Installation</h3>
 
-###Download
+<h4>Download</h4>
 
 Download and install the package from our.umbraco.org: <a href="https://our.umbraco.org/projects/backoffice-extensions/link-picker" target="_blank">our.umbraco.org/projects/backoffice-extensions/link-picker</a>
 
-###NuGet
+<h4>NuGet</h4>
 
-PM > Install-Package UmbracoLinkPicker
+<pre>PM > Install-Package UmbracoLinkPicker</pre>
 
 Create a new DataType in the Developer tab in your Umbraco project, referencing "Link Picker" (alias: "Gibe.LinkPicker"). Add the new DataType to your Document Types to use the Link Picker
 
-##Usage
+<h3>Usage</h3>
 
 The Link Picker returns JSON like the following example:
 
 <pre>
 {
-	id: 1039,
-	name: "Node Name",
-	url: "/node-url",
-	target: "_blank",
-	hashtarget: ""
+  id: 1039,
+  name: "Node Name",
+  url: "/node-url",
+  target: "_blank",
+  hashtarget: ""
 }
 </pre>
 
@@ -57,7 +61,7 @@ If you are using dynamic, you can access the JSON data like this:
 @Umbraco.Content(CurrentPage.propertyName.id).Url
 </pre>
 
-If you are using strongly-typed, or want to deserialize the JSON, then use <code>Newtonsoft.Json</code> to access the data using a model:
+If you want to use strongly-typed:
 
 <pre>
 // Strongly typed
@@ -71,7 +75,7 @@ var link = site.Link;
 LinkPicker link = Model.Items.First().GetValue<LinkPicker>("link");
 </pre>
 
-##Screenshots
+<h3>Screenshots</h3>
 
 **Step 1:** Click the "Choose" link
 
@@ -93,10 +97,10 @@ LinkPicker link = Model.Items.First().GetValue<LinkPicker>("link");
 
 ![Screenshot 4](README.md.res/Step-4.jpg)
 
-##License
+<h3>License</h3>
 
 The Umbraco Link Picker is created by <a href="http://www.karltynan.co.uk" target="_blank">Karl Tynan</a> for <a href="http://www.gibedigital.com" target="_blank">Gibe Digital</a> under the MIT License: [opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
 
-##Get involved!
+<h3>Get involved!</h3>
 
 This project is open for collaboration, so please help improve this project.
