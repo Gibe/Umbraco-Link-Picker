@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using Umbraco.Core.PropertyEditors;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Newtonsoft.Json;
 using Umbraco.Core.Logging;
 
-namespace LinkPicker.Umbraco.PropertyConverters
+namespace Gibe.LinkPicker.Umbraco.PropertyConverters
 {
     [PropertyValueType(typeof(Models.LinkPicker))]
     [PropertyValueCache(PropertyCacheValue.All, PropertyCacheLevel.Content)]
