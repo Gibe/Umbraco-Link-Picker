@@ -10,10 +10,10 @@
 		               ng-disabled="target.id"/>
 		    </umb-control-group>
 
-            <umb-control-group label="Hash Target">
+            <umb-control-group label="@Gibe.LinkPicker_hashTarget">
                 <input type="text"
                        localize="placeholder"
-                       placeholder="Enter a hash target..."
+                       placeholder="@Gibe.LinkPicker_enterHashTarget"
                        class="umb-editor umb-textstring"
                        ng-model="target.hashtarget" />
             </umb-control-group>
@@ -29,9 +29,7 @@
 			<umb-control-group label="@content_target">
 				<select class="umb-editor umb-dropdown" ng-model="target.target">
 					<option value=""></option>
-					<option value="_blank">Opens the linked document in a new window or tab</option>
-					<option value="_top">Opens the linked document in the full body of the window</option>
-					<option value="_parent">Opens the linked document in the parent frame</option>
+					<option value="_blank"><localize key="defaultdialogs_openInNewWindow">Opens the linked document in a new window or tab</localize></option>
 				</select>
 			</umb-control-group>
 		</umb-pane>
@@ -70,11 +68,11 @@
 	        		<localize key="general_cancel">Cancel</localize>
 				</a>
 
-				<a href ng-click="switchToMediaPicker()" class="btn">Link to file</a>
+				<a href ng-click="switchToMediaPicker()" class="btn">
+					<localize key="defaultdialogs_linkToFile">Link to file</localize>
+				</a>
 
-				<button
-					class="btn btn-primary"
-					ng-click="submit(target)">
+				<button class="btn btn-primary" ng-click="submit(target)">
 					<localize key="buttons_select">Select</localize>
 				</button>
 	        </div>
