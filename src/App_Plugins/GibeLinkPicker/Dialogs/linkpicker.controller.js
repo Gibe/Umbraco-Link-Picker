@@ -28,10 +28,10 @@ angular.module("umbraco").controller("Gibe.Dialogs.LinkPickerController",
 	        $scope.target = dialogOptions.currentTarget;
 
 	        //if we have a node ID, we fetch the current node to build the form data
-	        if ($scope.model.target.id || $scope.model.target.udi) {
+	        if ($scope.target.id || $scope.target.udi) {
 
 				//will be either a udi or an int
-                var id = $scope.model.target.udi ? $scope.model.target.udi : $scope.model.target.id;
+                var id = $scope.target.udi ? $scope.target.udi : $scope.target.id;
 
 	            if (!$scope.target.path) {
 	                entityResource.getPath(id, "Document").then(function (path) {
