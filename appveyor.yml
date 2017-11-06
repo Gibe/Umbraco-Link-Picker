@@ -1,0 +1,25 @@
+image: Visual Studio 2017
+
+# version format
+version: 1.4.0.{build}
+
+cache:
+  - src\packages -> **\packages.config  # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
+
+build_script:
+- build\build-appveyor.cmd
+
+artifacts:
+  - path: artifacts\*.nupkg
+  - path: artifacts\*.zip
+
+deploy:
+    # NuGet Deployment for releases
+  - provider: NuGet
+    server: 
+    api_key:
+      secure: mN9RxEEmhXOrt4qdqQbPAZO6bB21be8kBr9Q9e5nSRkPp1DJCRy/hcfCz/o0WQRk
+    artifact: /.*\.nupkg/
+    on:
+      branch: master
+      appveyor_repo_tag: true
