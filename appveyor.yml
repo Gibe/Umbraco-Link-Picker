@@ -21,5 +21,4 @@ deploy:
       secure: mN9RxEEmhXOrt4qdqQbPAZO6bB21be8kBr9Q9e5nSRkPp1DJCRy/hcfCz/o0WQRk
     artifact: /.*\.nupkg/
     on:
-      branch: master
       appveyor_repo_tag: true
