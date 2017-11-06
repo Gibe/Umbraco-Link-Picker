@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Gibe.LinkPicker.Umbraco.Models
+﻿namespace Gibe.LinkPicker.Umbraco.Models
 {
     public class LinkPicker
     {
