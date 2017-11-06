@@ -23,7 +23,7 @@
 		<AuthorUrl>https://github.com/leekelleher/umbraco-ditto/graphs/contributors</AuthorUrl>
 		<PackageLicenseName>MIT license</PackageLicenseName>
 		<PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
-		<ProjectUrl>hhttps://github.com/Gibe/Umbraco-Link-Picker</ProjectUrl>
+		<ProjectUrl>https://github.com/Gibe/Umbraco-Link-Picker</ProjectUrl>
 	</PropertyGroup>
 
 	<!-- NUGET ONLY PROPERTIES -->
@@ -32,7 +32,7 @@
 		<NuGetPackageName>Umbraco Link Picker</NuGetPackageName>
 		<Copyright>Copyright &#169; 2017 Gibe Digital Ltd</Copyright>
 		<Owners>Karl Tynan</Owners> 
-		<IconUrl>ttps://our.umbraco.org/media/wiki/144314/635599394410352966_Link-Picker-Logopng.png</IconUrl>
+		<IconUrl>https://our.umbraco.org/media/wiki/144314/635599394410352966_Link-Picker-Logopng.png</IconUrl>
 		<Tags></Tags>
 		<Language>en-GB</Language>
 		<RequireLicenseAcceptance>false</RequireLicenseAcceptance>
