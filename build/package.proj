@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+`<?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Package" ToolsVersion="14.0">
 
 	<!-- IMPORTS -->
@@ -118,7 +118,7 @@
 	<Target Name="PrepareFiles" DependsOnTargets="Compile">
 		<ItemGroup>
 			<BinFiles Include="$(ProjectDir)\bin\$(BuildConfig)\Gibe.LinkPicker.Umbraco.dll" />
-			<PdbFiles Include="$(ProjectDir)\bin\$(BuildConfig)\Gibe.LinkPicker.Umbracob     .pdb" />
+			<PdbFiles Include="$(ProjectDir)\bin\$(BuildConfig)\Gibe.LinkPicker.Umbraco.pdb" />
 			<SrcFiles Include="$(ProjectDir)\**\*.cs" Exclude="$(ProjectDir)\obj\**"/>
 			<PackageFile Include="$(MSBuildProjectDirectory)\package.xml" />
 			<NuSpecFile Include="$(MSBuildProjectDirectory)\package.nuspec" />
