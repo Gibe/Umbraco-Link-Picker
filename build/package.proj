@@ -183,7 +183,7 @@
 	<!-- PACKAGE -->
 	<Target Name="Package" DependsOnTargets="ManifestUmbraco; ManifestNuGet">
 		<ItemGroup>
-			<PackageFiles Include="$(BuildUmbDir)\App_Plugins\**\*.*" />
+			<PackageFiles Include="$(BuildUmbDir)\**\*.*" />
 		</ItemGroup>
 
 		<Package ManifestFile="$(BuildUmbDir)\package.xml"
