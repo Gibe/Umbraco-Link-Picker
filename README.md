@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/inglha3jbuojwsmt/branch/master?svg=true)](https://ci.appveyor.com/project/karltynan/umbraco-link-picker)
+
 <h2>Umbraco Link Picker</h2>
 
 A simple internal or external link picker property editor for **Umbraco 7.x**
