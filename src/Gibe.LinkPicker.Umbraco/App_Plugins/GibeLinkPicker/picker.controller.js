@@ -11,9 +11,11 @@
 	        show: true,
 	        dialogData: $scope.model.config,
 	        callback: function(e) {
+
 	            // set model
 	            $scope.model.value = {
 	                id: e.id || 0,
+                  udi: e.udi || '',
 	                name: e.name || '',
 	                url: e.url,
 	                target: e.target || '_self',
@@ -33,9 +35,11 @@
 	        dialogData: linkPickerModel.config,
 	        target: linkPickerModel.value,
 	        callback: function (e) {
+
 	            // set model
 	            $scope.model.value = {
 	                id: e.id || 0,
+                  udi: e.udi || '',
 	                name: e.name || '',
 	                url: e.url,
 	                target: e.target || '_self',
