@@ -40,9 +40,17 @@ namespace Gibe.LinkPicker.Umbraco.PropertyConverters
 
             var sourceString = source.ToString();
 
+            var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
+
             try
             {
-                var linkPicker = JsonConvert.DeserializeObject<Models.LinkPicker>(sourceString);
+                Models.LinkPicker linkPicker = JsonConvert.DeserializeObject<Models.LinkPicker>(sourceString);
+
+                if(linkPicker.Id > 0)
+                {
+                    linkPicker.Url = umbracoHelper.TypedContent(linkPicker.Id).Url;
+                }
+
 
                 return linkPicker;
             }
