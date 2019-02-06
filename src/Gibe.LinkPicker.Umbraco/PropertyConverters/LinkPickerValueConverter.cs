@@ -48,9 +48,8 @@ namespace Gibe.LinkPicker.Umbraco.PropertyConverters
 
                 if(linkPicker.Id > 0)
                 {
-                    linkPicker.Url = umbracoHelper.TypedContent(linkPicker.Id).Url;
+                    linkPicker.Url = umbracoHelper.TypedContent(linkPicker.Id)?.Url ?? linkPicker.Url;
                 }
-
 
                 return linkPicker;
             }
