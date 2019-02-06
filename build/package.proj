@@ -19,8 +19,8 @@
 		<PackageName>UmbracoLinkPicker</PackageName>
 		<MinUmbracoVersion>7.0.0</MinUmbracoVersion>
 		<Readme>A simple internal or external link picker property editor for Umbraco 7.x</Readme>
-		<AuthorName>Karl Tynan</AuthorName>
-		<AuthorUrl>https://github.com/leekelleher/umbraco-ditto/graphs/contributors</AuthorUrl>
+		<AuthorName>Gibe Digital</AuthorName>
+		<AuthorUrl>https://github.com/Gibe/Umbraco-Link-Picker/graphs/contributors</AuthorUrl>
 		<PackageLicenseName>MIT license</PackageLicenseName>
 		<PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
 		<ProjectUrl>https://github.com/Gibe/Umbraco-Link-Picker</ProjectUrl>
@@ -30,8 +30,8 @@
 	<PropertyGroup>
 		<PackageId>UmbracoLinkPicker</PackageId>
 		<NuGetPackageName>Umbraco Link Picker</NuGetPackageName>
-		<Copyright>Copyright &#169; 2017 Gibe Digital Ltd</Copyright>
-		<Owners>Karl Tynan</Owners> 
+		<Copyright>Copyright &#169; 2018 Gibe Digital Ltd</Copyright>
+		<Owners>Gibe Digital</Owners> 
 		<IconUrl>https://our.umbraco.org/media/wiki/144314/635599394410352966_Link-Picker-Logopng.png</IconUrl>
 		<Tags></Tags>
 		<Language>en-GB</Language>
