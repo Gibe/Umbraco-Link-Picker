@@ -14,6 +14,7 @@
                 // set model
                 $scope.model.value = {
                     id: e.id || 0,
+                    udi: e.udi || '',
                     name: e.name || '',
                     icon: e.icon,
                     url: e.url,
@@ -37,6 +38,7 @@
                 // set model
                 $scope.model.value = {
                     id: e.id || 0,
+                    udi: e.udi || '', 
                     name: e.name || '',
                     icon: e.icon,
                     url: e.url,
