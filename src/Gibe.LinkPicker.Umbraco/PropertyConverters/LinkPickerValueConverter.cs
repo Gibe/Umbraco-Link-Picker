@@ -3,6 +3,7 @@ using Umbraco.Core.PropertyEditors;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Newtonsoft.Json;
+using Umbraco.Core;
 using Umbraco.Core.Logging;
 
 namespace Gibe.LinkPicker.Umbraco.PropertyConverters
@@ -39,16 +40,20 @@ namespace Gibe.LinkPicker.Umbraco.PropertyConverters
                 return null;
 
             var sourceString = source.ToString();
-
             var umbracoHelper = new UmbracoHelper(UmbracoContext.Current);
 
             try
             {
-                Models.LinkPicker linkPicker = JsonConvert.DeserializeObject<Models.LinkPicker>(sourceString);
+                var linkPicker = JsonConvert.DeserializeObject<Models.LinkPicker>(sourceString);
 
-                if(linkPicker.Id > 0)
+                if(linkPicker.Id > 0 || linkPicker.Udi != null)
                 {
-                    linkPicker.Url = umbracoHelper.TypedContent(linkPicker.Id)?.Url ?? linkPicker.Url;
+                    var content =
+                        linkPicker.Udi != null
+                            ? umbracoHelper.TypedContent(Udi.Parse(linkPicker.Udi))
+                            : umbracoHelper.TypedContent(linkPicker.Id);
+                    
+                    linkPicker.Url = content?.Url ?? linkPicker.Url;
                 }
 
                 return linkPicker;
