@@ -1,16 +1,18 @@
-﻿<div ng-controller="Gibe.LinkPickerController">
-
+﻿<div ng-controller="Gibe.LinkPickerController" class="umb-editor umb-contentpicker">
 	<div class="gibe-link-picker">
-		<p class="chosen" ng-show="model.value">
-		    <a href="{{model.value.url}}" target="_blank">{{model.value.name || model.value.url}}</a>
-		    <a class="remove" href="" ng-click="removeLink()"><i class="icon icon-delete"></i></a>
-            <a class="edit" href="" ng-click="editLink()"><i class="icon icon-edit"></i></a>
-		</p>
-		<p class="internal-picker" ng-hide="model.value">
-			<a class="link" href="" ng-click="chooseLink()">
-				<localize key="general_choose">Choose</localize>
-			</a>
-		</p>
+        <div class="umb-node-preview" ng-show="model.value">
+            <i ng-if="model.value.icon" class="umb-node-preview__icon {{model.value.icon}}"></i>
+            <div class="umb-node-preview__content">
+                <div class="umb-node-preview__name ng-binding">{{model.value.name || model.value.url}}</div>
+                <div ng-if="model.value.name && model.value.url" class="umb-node-preview__description">{{model.value.url}}</div>
+            </div>
+            <div class="umb-node-preview__actions">
+                <a class="umb-node-preview__action" title="Edit" href="" ng-click="editLink()"><localize key="general_edit">Edit</localize></a>
+                <a class="umb-node-preview__action umb-node-preview__action--red" title="Remove" href="" ng-click="removeLink()"><localize key="general_remove">Remove</localize></i></a>
+            </div>
+        </div>
+		<div class="internal-picker" ng-hide="model.value">
+			<a class="link umb-node-preview-add" href="" ng-click="chooseLink()">Choose</a>
+		</div>
 	</div>
-
 </div>

@@ -4,12 +4,6 @@
 	padding: 0;
 }
 
-.gibe-link-picker .chosen
-{
-	margin: 0;
-	padding: 0;
-}
-
 .gibe-link-picker .internal-picker
 {
 	margin: 0;
@@ -43,4 +37,9 @@
 .gibe-link-picker .form-row .umb-editor
 {
 	min-width: 300px;
+}
+
+.gibe-link-picker .umb-node-preview 
+{
+    border-bottom: none
 }
