@@ -46,7 +46,7 @@ namespace Gibe.LinkPicker.Umbraco.PropertyConverters
             {
                 var linkPicker = JsonConvert.DeserializeObject<Models.LinkPicker>(sourceString);
 
-                if(linkPicker.Id > 0 || linkPicker.Udi != null)
+                if(linkPicker.Id > 0 || !string.IsNullOrWhiteSpace(linkPicker.Udi))
                 {
                     var content =
                         linkPicker.Udi != null
