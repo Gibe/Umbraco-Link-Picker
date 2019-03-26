@@ -19,7 +19,8 @@
                     icon: e.icon,
                     url: e.url,
                     target: e.target || '_self',
-                    hashtarget: e.hashtarget || ''
+					hashtarget: e.hashtarget || '',
+					classname: e.classname || ''
                 };
                 // close dialog
                 uDialogService.close();
@@ -43,7 +44,8 @@
                     icon: e.icon,
                     url: e.url,
                     target: e.target || '_self',
-                    hashtarget: e.hashtarget || ''
+					hashtarget: e.hashtarget || '',
+					classname: e.classname || ''
                 };
                 // close dialog
                 uDialogService.close();

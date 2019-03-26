@@ -32,6 +32,15 @@
 					<option value="_blank"><localize key="defaultdialogs_openInNewWindow">Opens the linked document in a new window or tab</localize></option>
 				</select>
 			</umb-control-group>
+
+            <umb-control-group label="@Gibe.LinkPicker_className">
+                <input type="text"
+                       localize="placeholder"
+                       placeholder="@Gibe.LinkPicker_enterClassName"
+                       class="umb-editor umb-textstring"
+                       ng-model="target.classname" />
+            </umb-control-group>
+
 		</umb-pane>
 
         <umb-tree-search-box hide-search-callback="hideSearch"
