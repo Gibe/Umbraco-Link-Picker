@@ -1,0 +1,4 @@
+﻿root = true
+
+[*.{cs,xml,scss,js,json,feature,sql,nuspec}]
+indent_style = tab
