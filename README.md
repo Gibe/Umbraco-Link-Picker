@@ -48,7 +48,8 @@ The Link Picker returns JSON like the following example:
   name: "Node Name",
   url: "/node-url",
   target: "_blank",
-  hashtarget: ""
+  hashtarget: "",
+	classname: ""
 }
 </pre>
 
