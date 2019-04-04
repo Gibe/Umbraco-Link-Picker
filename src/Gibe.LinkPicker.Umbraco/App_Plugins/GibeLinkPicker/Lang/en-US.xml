@@ -3,5 +3,7 @@
 	<area alias="Gibe.LinkPicker">
 		<key alias="enterHashTarget">Enter a hash target</key>
 		<key alias="hashTarget">Hash target</key>
+		<key alias="enterClassName">Enter a class name</key>
+		<key alias="className">Class name</key>
 	</area>
 </language>
