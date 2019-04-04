@@ -43,12 +43,12 @@ The Link Picker returns JSON like the following example:
 
 <pre>
 {
-  id: 1039,
-  udi: "umb://document/4fed18d8c5e34d5e88cfff3a5b457bf2"
-  name: "Node Name",
-  url: "/node-url",
-  target: "_blank",
-  hashtarget: "",
+	id: 1039,
+	udi: "umb://document/4fed18d8c5e34d5e88cfff3a5b457bf2"
+	name: "Node Name",
+	url: "/node-url",
+	target: "_blank",
+	hashtarget: "",
 	classname: ""
 }
 </pre>

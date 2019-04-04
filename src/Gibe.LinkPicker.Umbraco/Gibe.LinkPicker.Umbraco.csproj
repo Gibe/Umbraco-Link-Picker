@@ -215,6 +215,7 @@
     <Compile Include="PropertyConverters\LinkPickerValueConverter.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".editorconfig" />
     <None Include="app.config" />
     <None Include="App_Plugins\GibeLinkPicker\package.manifest" />
     <None Include="packages.config" />
