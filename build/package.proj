@@ -111,14 +111,14 @@
 
 	<!-- COMPILE -->
 	<Target Name="Compile" DependsOnTargets="UpdateAssemblyInfo">
-		<MSBuild Projects="$(ProjectDir)\Gibe.LinkPicker.Umbraco.csproj" Properties="Configuration=$(BuildConfig)" />
+		<MSBuild Projects="$(ProjectDir)\Gibe.LinkPicker.csproj" Properties="Configuration=$(BuildConfig)" />
 	</Target>
 
 	<!-- PREPARE FILES -->
 	<Target Name="PrepareFiles" DependsOnTargets="Compile">
 		<ItemGroup>
-			<BinFiles Include="$(ProjectDir)\bin\$(BuildConfig)\Gibe.LinkPicker.Umbraco.dll" />
-			<PdbFiles Include="$(ProjectDir)\bin\$(BuildConfig)\Gibe.LinkPicker.Umbraco.pdb" />
+			<BinFiles Include="$(ProjectDir)\bin\$(BuildConfig)\Gibe.LinkPicker.dll" />
+			<PdbFiles Include="$(ProjectDir)\bin\$(BuildConfig)\Gibe.LinkPicker.pdb" />
 			<SrcFiles Include="$(ProjectDir)\**\*.cs" Exclude="$(ProjectDir)\obj\**"/>
 			<PluginFiles Include="$(ProjectDir)\App_Plugins\**\*.*" />
 			<PackageFile Include="$(MSBuildProjectDirectory)\package.xml" />
