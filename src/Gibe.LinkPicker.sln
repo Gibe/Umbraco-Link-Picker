@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibe.LinkPicker.Umbraco", "Gibe.LinkPicker.Umbraco\Gibe.LinkPicker.Umbraco.csproj", "{99D4F99D-7CB5-42F0-AD82-74B1AB947A2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibe.LinkPicker", "Gibe.LinkPicker.Umbraco\Gibe.LinkPicker.csproj", "{99D4F99D-7CB5-42F0-AD82-74B1AB947A2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C21355C2-F8A6-48E0-AB21-3C23B138EAD3}"
 	ProjectSection(SolutionItems) = preProject

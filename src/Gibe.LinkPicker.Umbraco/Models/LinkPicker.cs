@@ -1,6 +1,6 @@
 ﻿using Umbraco.Core;
 
-namespace Gibe.LinkPicker.Umbraco.Models
+namespace Gibe.LinkPicker.Models
 {
 	public class LinkPicker
 	{
@@ -10,6 +10,5 @@ namespace Gibe.LinkPicker.Umbraco.Models
 		public string Url { get; set; }
 		public string Target { get; set; }
 		public string Hashtarget { get; set; }
-		public string Classname { get; set; }
 	}
 }

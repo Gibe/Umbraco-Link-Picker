@@ -1,61 +1,83 @@
-﻿angular.module("umbraco").controller("Gibe.LinkPickerController", function ($scope, assetsService) {
+﻿angular.module("umbraco").controller("Gibe.LinkPickerController", function ($scope, assetsService, editorService, entityResource, iconHelper) {
 
-	var ngi = angular.element('body').injector();
-	var uDialogService = ngi.get('dialogService');
-
-	// choose internal link
 	$scope.chooseLink = function () {
 		$scope.model.value = null;
-		uDialogService.open({
-			template: '../App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
-			show: true,
-			dialogData: $scope.model.config,
-			callback: function (e) {
-				// set model
-				$scope.model.value = {
-					id: e.id || 0,
-					udi: e.udi || '',
-					name: e.name || '',
-					icon: e.icon,
-					url: e.url,
-					target: e.target || '_self',
-					hashtarget: e.hashtarget || '',
-					classname: e.classname || ''
-				};
-				// close dialog
-				uDialogService.close();
+		var options = {
+			submit: function (e) {
+				$scope.model.value = loadExtraDetails({
+					id: e.target.id || 0,
+					udi: e.target.udi || '',
+					name: e.target.name || '',
+					url: e.target.url,
+					target: e.target.target || '_self',
+					hashtarget: e.target.anchor || '',
+					isMedia: e.target.isMedia,
+				});
+
+				editorService.close();
+			},
+			close: function () {
+				editorService.close();
 			}
-		});
+		}
+
+		editorService.linkPicker(options);
 	};
 
 	$scope.editLink = function () {
 		var linkPickerModel = angular.copy($scope.model);
-		uDialogService.open({
-			template: '../App_Plugins/GibeLinkPicker/Dialogs/linkpicker.html',
-			show: true,
-			dialogData: linkPickerModel.config,
-			target: linkPickerModel.value,
-			callback: function (e) {
-				// set model
-				$scope.model.value = {
-					id: e.id || 0,
-					udi: e.udi || '',
-					name: e.name || '',
-					icon: e.icon,
-					url: e.url,
-					target: e.target || '_self',
-					hashtarget: e.hashtarget || '',
-					classname: e.classname || ''
-				};
-				// close dialog
-				uDialogService.close();
+		var options = {
+			currentTarget: map(linkPickerModel.value),
+			submit: function (e) {
+
+				$scope.model.value = loadExtraDetails({
+					id: e.target.id || 0,
+					udi: e.target.udi || '',
+					name: e.target.name || '',
+					url: e.target.url,
+					target: e.target.target || '_self',
+					hashtarget: e.target.anchor || '',
+					isMedia: e.target.isMedia,
+					icon: e.icon // TODO
+				});
+				editorService.close();
+			},
+			close: function () {
+				editorService.close();
 			}
-		});
+		};
+
+		editorService.linkPicker(options);
 	};
+
+	function loadExtraDetails(link) {
+		if (link.udi) {
+			var entityType = link.isMedia ? "Media" : "Document";
+
+			entityResource.getById(link.udi, entityType).then(function (data) {
+				link.icon = iconHelper.convertFromLegacyIcon(data.icon);
+			});
+		} else {
+			link.icon = "icon-link";
+		}
+		return link;
+	}
+
+
+	function map(model) {
+		return {
+			id: model.id,
+			udi: model.udi,
+			name: model.name,
+			url: model.url,
+			target: model.target,
+			anchor: model.anchor
+		};
+	}
 
 	// remove link
 	$scope.removeLink = function () {
-		$scope.model.value = null;
+		delete $scope.model.value;
 	};
 
 	assetsService.loadCss("../App_Plugins/GibeLinkPicker/picker.css");
