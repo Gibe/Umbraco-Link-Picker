@@ -17,7 +17,7 @@
 	<!-- SHARED PROPERTIES -->
 	<PropertyGroup>
 		<PackageName>UmbracoLinkPicker</PackageName>
-		<MinUmbracoVersion>7.0.0</MinUmbracoVersion>
+		<MinUmbracoVersion>8.0.0</MinUmbracoVersion>
 		<Readme>A simple internal or external link picker property editor for Umbraco 7.x</Readme>
 		<AuthorName>Gibe Digital</AuthorName>
 		<AuthorUrl>https://github.com/Gibe/Umbraco-Link-Picker/graphs/contributors</AuthorUrl>
@@ -30,7 +30,7 @@
 	<PropertyGroup>
 		<PackageId>UmbracoLinkPicker</PackageId>
 		<NuGetPackageName>Umbraco Link Picker</NuGetPackageName>
-		<Copyright>Copyright &#169; 2018 Gibe Digital Ltd</Copyright>
+		<Copyright>Copyright &#169; 2021 Gibe Digital Ltd</Copyright>
 		<Owners>Gibe Digital</Owners> 
 		<IconUrl>https://our.umbraco.org/media/wiki/144314/635599394410352966_Link-Picker-Logopng.png</IconUrl>
 		<Tags></Tags>
